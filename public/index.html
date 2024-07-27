@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title> DAEREAL.com</title>
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/bg1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            z-index: -1;
+            transition: background-image 1s ease-in-out; /* Transisi smooth untuk pergantian gambar */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav id="navbar" data-aos="fade-down" data-aos-duration="1500" class="navbar fixed w-full top-0 left-0 z-50 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <!-- Logo -->
+                <img src="img/logo.png" alt="Logo" class="h-8 mr-4">
+                <a href="#home" class="text-2xl font-bold text-white font-mono">DAEREAL</a>
+            </div>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="nav-link text-white hover:text-slate-600">Home</a></li>
+                <li><a href="#about" class="nav-link text-white hover:text-slate-600">About us</a></li>
+                <li><a href="#produk" class="nav-link text-white hover:text-slate-600">Produk</a></li>
+                <li><a href="#portofolio" class="nav-link text-white hover:text-slate-600">Portofolio</a></li>
+                <li><a href="#kontak" class="nav-link text-white hover:text-slate-600">Contact Us</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="menu-header text-center py-4">
+                <img src="img/logo.png" alt="Logo" class="h-12 mx-auto mb-2">
+                <h1 class="text-2xl font-bold text-white">PT.Sukbum</h1>
+            </div>
+            <button id="close-btn" class="text-white absolute top-4 right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="#home" class="block py-2 px-4 nav-link text-white hover:text-slate-600">Home</a></li>
+                <li><a href="#about" class="block py-2 px-4 nav-link text-white hover:text-slate-600">About us</a></li>
+                <li><a href="#produk" class="block py-2 px-4 nav-link text-white hover:text-slate-600">Produk</a></li>
+                <li><a href="#portofolio" class="block py-2 px-4 nav-link text-white hover:text-slate-600">Portofolio</a></li>
+                <li><a href="#kontak" class="block py-2 px-4 nav-link text-white hover:text-slate-600">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Section Home -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <div class="parallax">
+            <div class="bg-gradient-overlay"></div>
+            <div class="parallax-content text-center mt-72">
+                <div data-aos="zoom-in">
+                    <h1 class="text-4xl font-bold font-typo2">Selamat datang di Daereal</h1>
+                    <h2 class="text-base mt-4"> 
+                    <p>Pintu besi DAEREAL
+                        Layanan Pintu Garasi
+                        Menerima pesanan Komponen dan pintu besi powder coating..</p>
+                    <p>Menerima Pesanan ke suluruh indonesia</p></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container px-8 lg:px-12">
+            <div class="flex flex-wrap">
+                <div data-aos="zoom-out" data-aos-duration="1500" class="w-full mx-auto lg:w-1/2">
+                    <div class="relative mt-16 sm:mt-12 lg:mt-24">
+                        <img src="img/p1.jpg" alt="Ptsurya" class="mx-auto
+                        sm:w-1/2
+                        lg:w-3/4">
+                    </div>
+                </div>
+                
+                <div class="w-full self-end px-5 lg:w-1/2">
+                    <h1 data-aos="fade-down" data-aos-duration="1500" class="text-3xl mt-4 text-center font-bold text-green-500 md:text-3xl">
+                        Kami Menawarkan Solusi
+                    </h1>
+                    <h2 data-aos="fade-down" data-aos-duration="1500" class="font-medium text-center text-slate-500 text-lg mb-8">Berbagai pintu besi kami tawarkan.</h2>
+                    <p data-aos="fade-right" data-aos-duration="1500" class="font-medium text-slate-500 mb-10 leading-relaxed">Solusi Kebutuhan Perangkat Lunak.
+                        <br>Merupakan solusi untuk anda yang dalam tahap pengembangan bisnis.<br><span class="text-indigo-600 font-semibold"><span class="text-indigo-600 font-semibold">"Perangkat Lunak"</span></p>
+                    <p data-aos="fade-right" data-aos-duration="1500" class="font-medium text-slate-500 mb-10 leading-relaxed">Solusi Kebutuhan Managemen dan Perangkat Parkir.
+                        <br>Sistem terintegrasi untuk parkir yang memudahkan pemilik lahan dalam melakukan pengelolaan.<br><span class="text-indigo-600 font-semibold">"Solusi, Sistem Parkir"</span></p>
+                    <p data-aos="fade-right" data-aos-duration="1500" class="font-medium text-slate-500 mb-10 leading-relaxed">Solusi Kebutuhan Pengeloaan Pengunjung.
+                        <br>Sistem terintegrasi mulai dari pembelian tiket sampai masuk ke area dengan penerapan teknologi qrcode, RFID dan Fingerprint.<br><span class="text-indigo-600 font-semibold">"Solusi, Pengunjung"</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section id="produk" class="py-24 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 data-aos="fade-down" data-aos-duration="1500" class="text-4xl font-bold mb-8">Products</h2>
+            <p data-aos="zoom-out" data-aos-duration="1500" class="text-lg mb-12">Explore our wide range of products designed to meet your needs.</p>
+            <!-- Product Cards -->
+            <div data-aos="fade-right" data-aos-duration="1500" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Example Product Card -->
+                <div class="product-card relative bg-gray-100 p-6 rounded-lg shadow-lg cursor-pointer">
+                    <img src="img/Project/1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">Product 1</h3>
+                    <div class="product-description absolute inset-0 bg-white bg-opacity-95 p-6 rounded-lg flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
+                        <p class="text-white">Brief description of the product goes here.</p>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="product-card relative bg-gray-100 p-6 rounded-lg shadow-lg cursor-pointer">
+                    <img src="img/Project/3.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">Product 2</h3>
+                    <div class="product-description absolute inset-0 bg-white bg-opacity-95 p-6 rounded-lg flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
+                        <p class="text-white">Brief description of the product goes here.</p>
+                    </div>
+                </div>
+                <div class="product-card relative bg-gray-100 p-6 rounded-lg shadow-lg cursor-pointer">
+                    <img src="img/Project/6.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">Product 3</h3>
+                    <div class="product-description absolute inset-0 bg-white bg-opacity-95 p-6 rounded-lg flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none">
+                        <p class="text-white">Brief description of the product goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+<section id="portofolio" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 data-aos="fade-down" data-aos-duration="1500" class="text-3xl font-bold text-center mt-4 mb-4">Portofolio</h2>
+        <p data-aos="zoom-out" data-aos-duration="1500" class="text-base font-normal text-center mb-6">Kami merupakan perusahan yang berusaha untuk menyesuai kan pesanan dan hasil yang bagus untuk customer</p>
+        <div data-aos="zoom-in" data-aos-duration="1500" style="max-width: 800px; margin: 0 auto;">
+            <iframe style="width: 100%; height: 450px;" class="rounded-lg shadow-lg" src="https://www.youtube.com/embed/QkPv-tkRflI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2 data-aos="fade-down" data-aos-duration="1500" class="text-2xl text-center mt-4 font-bold mb-8">Portofolio Hail Project</h2>
+        <div data-aos="fade-right" data-aos-duration="1500" class="masonry">
+            <div class="masonry-item">
+                <img src="img/Project/4.jpg" alt="Project 1" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <div class="masonry-item">
+                <img src="img/Project/3.jpg" alt="Project 2" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <div class="masonry-item">
+                <img src="img/Project/9.jpg" alt="Project 1" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <div class="masonry-item">
+                <img src="img/Project/6.jpg" alt="Project 2" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <div class="masonry-item">
+                <img src="img/Project/7.jpg" alt="Project 1" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <div class="masonry-item">
+                <img src="img/Project/4.jpg" alt="Project 2" class="w-full h-auto cursor-pointer transition-transform duration-300 transform hover:scale-105" onclick="zoomImage(this)">
+            </div>
+            <!-- Add more items here -->
+        </div>
+        <div class="zoomed" id="zoomed">
+            <img id="zoomed-image" src="" alt="Zoomed Image">
+        </div>
+    </div>
+</section>
+
+    <!-- Hubungi kami Section -->
+    <section id="kontak" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 data-aos="fade-down" data-aos-duration="1500" class="text-4xl font-bold mb-4">Kontak Kami</h2>
+            <div class="container px-8 lg:px-12">
+                <div class="flex flex-wrap">
+                    <div data-aos="fade-right" data-aos-duration="1500" class="w-full flex flex-col space-y-4 self-start px-6 md:mb-72 lg:w-1/2">
+                        <h2 class="text-center font-bold text-black">Hubungi Kami</h2>
+                        <div class="inline-flex items-center">
+                            <img src="img/lokasi2.png" alt="lokasi" class="w-10">
+                            <span class="ml-2 text-base">Lokasi : Jln.raya sukalarang sukabumi </span>
+                        </div>
+                        <div class="inline-flex items-center">
+                            <img src="img/wa.png" alt="whatsapp" class="w-10">
+                            <span class="ml-2 text-base">
+                                <a href="https://wa.me/6281280198222" target="_blank" class="text-green-500 hover:text-green-600">+62 812-8019-8222</a>
+                            </span>
+                        </div>
+                        <div class="inline-flex items-center">
+                            <img src="img/wa.png" alt="whatsapp" class="w-10">
+                            <span class="ml-2 text-base">
+                                <a href="https://wa.me/6281341477859" target="_blank" class="text-green-500 hover:text-green-600">+62 81341477859</a>
+                            </span>
+                        </div>
+                        <div class="inline-flex items-center">
+                            <img src="img/gmail.png" alt="gmail" class="w-10">
+                            <span class="ml-2 text-base">
+                                <a href="mailto:mamanusuf@gmail.com" target="_blank" class="text-red-500 hover:text-red-600">mamanusuf@gmail.com</a>
+                            </span>
+                        </div>
+                        <div class="inline-flex items-center">
+                            <img src="img/instagram.png" alt="instagram" class="w-10">
+                            <span class="ml-2 text-base">
+                                <a href="https://www.instagram.com/Pintubesipowdercoating" target="_blank" class="text-pink-500 hover:text-pink-600">@Pintubesipowdercoating</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Div hero banner1 -->
+                    <div data-aos="fade-left" data-aos-duration="1500" class="w-full flex flex-col space-y-4 self-end px-6 mb-8 lg:w-1/2">
+                        <h2 class="text-center font-bold text-black">Lokasi Kami</h2>
+                        <div class="inline-flex items-center mt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.313177019305!2d106.99779046594976!3d-6.881223942771946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684eb0e4ceb1d7%3A0x585482e65851f928!2sDae%20Real!5e0!3m2!1sid!2sid!4v1722077554593!5m2!1sid!2sid"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+                        </div>
+                    </div>
+                    <!-- end div -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2024 PT.Sukbum. All rights reserved.</p>
+    </footer>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

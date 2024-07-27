@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'typo1';
+    src: url('/public/font/1/BrusselsCityPersonalUsed-L3Lon.otf') format('opentype');
+}
+@font-face {
+    font-family: 'typo2';
+    src: url('/public/font/2/WsParadoseRegular-1jPAe.ttf') format('truetype');
+}

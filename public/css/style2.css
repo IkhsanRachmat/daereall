@@ -1,0 +1,173 @@
+html {
+    scroll-behavior: smooth;
+}
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+.nav-link.active::after {
+    width: 100%;
+}
+.navbar {
+    background: rgba(255, 255, 255, 0); /* Initial transparent background */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+    background: #2c2626; /* Solid background color on scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed; /* Fixed position to overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2c2626; /* Red background */
+    transform: translateY(-100%); /* Hide menu initially */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.mobile-menu.active {
+    transform: translateY(0); /* Show menu */
+    opacity: 1;
+    visibility: visible;
+}
+
+#close-btn {
+    position: absolute;
+    top: 16px; /* Adjust as needed */
+    right: 16px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.menu-header {
+    position: relative;
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.8); /* Semi-transparent red for header */
+}
+
+/* Other styles */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .md:hidden {
+        display: none;
+    }
+}
+
+/* Overlay */
+.bg-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 34, 36, 0.616); /* #2C3639 dengan transparansi */
+    z-index: 1;
+}
+
+/* Content on top of the parallax */
+.parallax-content {
+    position: relative;
+    z-index: 2; /* Ensure it appears above the parallax background */
+    color: white;
+    text-align: center;
+}
+
+/* Product Card Styles */
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3F4E4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.product-card.active .product-description {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.masonry {
+column-count: 3;
+column-gap: 1rem;
+}
+
+.masonry-item {
+break-inside: avoid;
+margin-bottom: 1rem;
+}
+
+.zoomed {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.8);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1000;
+cursor: zoom-out;
+display: none;
+}
+
+.zoomed img {
+max-width: 90%;
+max-height: 90%;
+object-fit: contain;
+}
